@@ -62,7 +62,7 @@ else:
     asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 try:
-    token = os.environ['TOKEN']
+    token = os.environ['NjI0MDA3NjEyMzU4MzI4MzIz.XaR-Eg.L311L_r2FZNPvSi8_0RLjtHFh20']
     heroku = True
 except KeyError:
     heroku = False
