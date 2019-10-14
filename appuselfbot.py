@@ -62,7 +62,7 @@ else:
     asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 try:
-    token = os.environ['TOKEN']
+    token = os.environ['NjI0MDA3NjEyMzU4MzI4MzIz.XaR-Eg.L311L_r2FZNPvSi8_0RLjtHFh20']
     heroku = True
 except KeyError:
     heroku = False
@@ -95,13 +95,13 @@ def wizard():
     print("Then, go into the Applications tab (you may have to click the arrow at the top right to get there), expand the 'Local Storage' dropdown, select discordapp, and then grab the token value at the bottom. Here's how it looks: https://imgur.com/h3g9uf6")
     print("Paste the contents of that entry below.")
     print("-------------------------------------------------------------")
-    config["token"] = input("| ").strip().strip('"')
+    config["NjI0MDA3NjEyMzU4MzI4MzIz.XaR-Eg.L311L_r2FZNPvSi8_0RLjtHFh20"] = input("| ").strip().strip('"')
     
-    config["cmd_prefix"] = False
-    while not config["cmd_prefix"]:
+    config["!"] = False
+    while not config["!"]:
         print("\nEnter the command prefix you want to use for main commands (e.g. if you enter > you will use commands like so: >about).")
         print("-------------------------------------------------------------")
-        config["cmd_prefix"] = input("| ").strip()
+        config["!"] = input("| ").strip()
         if not config["cmd_prefix"]:
             print("Empty command prefixes are invalid.")
             
